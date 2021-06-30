@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nail Artist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="#">
+	<meta name="keywords" content="#">
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<!-- OG Tags -->
+	<meta property="og:title" content="#">
+	<meta property="og:description" content="#">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="#">
+	<meta property="og:site_name" content="#">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- CSS Styles-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://use.typekit.net/pio6osi.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- <link rel="stylesheet" href="fontawesome/css/fontawesome-all.css"> -->
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="heading">
+			<div class="container">
+				<div class="row">
+					<div class="col-5 col-md-3">
+						<a href="#" class="logo">
+							Logo Here
+						</a>
+					</div>
+					<div class="d-lg-none col-3 ml-auto">
+						<div id="nav" class="navigation">
+							<div class="navigation__inner">
+								<!--   Content   -->
+								<nav class="nav">
+									<ul class="menu menu_hamb d-flex align-items-center justify-content-center ml-auto flex-column">
+										<li class="menu__item">
+											<a href="index.html" class="menu__link menu__link_humb">
+												Home
+											</a>
+										</li>
+										<li class="menu__item">
+											<a href="about.html" class="menu__link menu__link_humb">
+												About
+											</a>
+										</li>
+										<li class="menu__item">
+											<a href="gallery.html" class="menu__link menu__link_humb">
+												Gallery
+											</a>
+										</li>
+										<li class="menu__item">
+											<a href="contacts.html" class="menu__link menu__link_humb">
+												Contacts
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<button id="show">
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+					<div class="d-none d-lg-block col-md-6">
+						<nav class="nav nav_about">
+							<ul class="menu d-flex justify-content-around">
+								<li class="menu__item">
+									<a href="index.html" class="menu__link">
+										Home
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">
+										About
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="gallery.html" class="menu__link">
+										Gallery
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="contact.html" class="menu__link">
+										Contact
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="d-none d-lg-block col-md-2 ml-md-auto">
+						<div class="socials d-flex justify-content-around">
+							<a href="#" class="socials__link">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							<a href="#" class="socials__link">
+								<i class="fab fa-twitter"></i>
+							</a>
+							<a href="#" class="socials__link">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a href="#" class="socials__link">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offer offer_about">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="offer__title text-center">
+							Gallery
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="container how-we-do-it">
+		<div class="gallery rounded">
+			<div class="interior" id="interior">
+				<div style="padding: 60px 40px 30px;">
+					<div data-aos="fade in" data-aos-duration="2000">
+						<div class="content">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 h-auto">
+									<div  class="box">
+										<div class="image">
+											<img src="img/gallery1.jpg">
+											<div onclick="onClickC();currentGalleryImage(1)" class="image-overlay"></div>
+
+										</div>
+									</div>
+									<div class="box">
+										<div class="image">
+											<img  src="img/gallery2.jpg">
+											<div onclick="onClickC();currentGalleryImage(2)" class="image-overlay"></div>
+										</div>    
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 h-auto">
+									<div class="box">
+										<div class="image">
+											<img src="img/gallery3.jpg">
+											<div onclick="onClickC();currentGalleryImage(3)" class="image-overlay"></div>
+										</div>
+									</div>
+									<div class="box">
+										<div class="image">
+											<img  src="img/gallery4.jpg">
+											<div onclick="onClickC();currentGalleryImage(4)" class="image-overlay"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<div class="box">
+										<div class="image">
+											<img src="img/gallery5.jpg">
+											<div onclick="onClickC();currentGalleryImage(5)" class="image-overlay"></div>
+										</div>
+									</div>
+									<div class="box">
+										<div class="image">
+											<img  src="img/gallery6.jpg">
+											<div class="image-overlay" onclick="onClickC();currentGalleryImage(6)"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<div class="box">
+										<div class="image">
+											<img src="img/gallery7.jpg">
+											<div class="image-overlay" onclick="onClickC();currentGalleryImage(7)"></div>
+										</div>
+									</div>
+									<div class="box">
+										<div class="image">
+											<img src="img/gallery8.jpg">
+											<div class="image-overlay" onclick="onClickC();currentGalleryImage(8)"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="show-more w3-animate-opacity" data-aos="fade in" data-aos-duration="4000" id="show-more-c"> 
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<div class="box">
+										<div class="image">
+											<img  src="img/gallery1.jpg">
+											<div class="image-overlay" onclick="onClickC();currentGalleryImage(9)"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<div class="box">
+										<div class="image">
+											<img src="img/gallery2.jpg">
+											<div class="image-overlay" onclick="onClickC();currentGalleryImage(10)"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<div  class="box">
+										<div class="image">
+											<img src="img/gallery3.jpg">
+											<div class="image-overlay" onclick="onClickC();currentGalleryImage(11)"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+									<div class="box">
+										<div class="image">
+											<img src="img/gallery4.jpg">
+											<div class="image-overlay" onclick="onClickC();currentGalleryImage(12)"></div>
+										</div>
+									</div>
+								</div>
+							</div>      
+						</div>
+					</div>
+					<div class="show-all" id="show-all-c">
+						<a href="#show-more-c" onclick="showMoreC()">Show all<i class="fa fa-arrow-down"></i></a>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer footer_gal" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="rights text-center">
+							&copy; WebDo 2019. All Rights Reserved. 
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div id="modal02" class="modal">
+			<span onclick="onClickCloseC()" class="close">&times;</span>
+			<div class="modal-content">
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery1_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery2_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery3_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery4_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery5_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery6_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery7_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery8_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery1_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery2_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery3_wide.jpg" >
+				</div>
+				<div class="myGalleryImages">
+					<img class=" w3-center w3-animate-opacity" id="img01"  src="img/gallery4_wide.jpg" >
+				</div>
+			</div>
+			<a class="prevImg" onclick="plusGalleryImages(-1)">&#10094;</a>
+			<a class="nextImg" onclick="plusGalleryImages(1)">&#10095;</a>
+		</div>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript">
+			AOS.init();
+
+			$(document).ready(function() {
+				$('.header .burger-menu .icon').on('click', function(){
+					$('.header .burger-menu .items').slideToggle(100);
+				});
+			});
+
+
+			$('.how-we-do-it .menu ul li a').on('click',function (e) {
+				$('.how-we-do-it .menu ul li').removeClass('active');
+				$(this).parent('li').addClass('active');
+				e.preventDefault();
+				var target = this.hash;
+				var $target = $(target);
+			});
+
+
+
+			$(document).ready(function() {
+				$('.how-we-do-it .show-all a').on('click', function(){
+					if(document.getElementById("show-more-c").style.display == "block") {
+						var x = document.getElementById("show-all-c");
+						x.style.display = "none";
+					}
+					if(document.getElementById("show-more-w").style.display == "block") {
+						var x = document.getElementById("show-all-w");
+						x.style.display = "none";
+					}
+					if(document.getElementById("show-more-s").style.display == "block") {
+						var x = document.getElementById("show-all-s");
+						x.style.display = "none";
+					}
+					if(document.getElementById("show-more-h").style.display == "block") {
+						var x = document.getElementById("show-all-h");
+						x.style.display = "none";
+					}
+				});
+			});
+
+
+			function showMoreC() {
+				var x = document.getElementById("show-more-c");
+				x.style.display = "block";
+
+			}
+			function showMoreW() {
+				var x = document.getElementById("show-more-w");
+				x.style.display = "block";
+
+			}
+			function showMoreS() {
+				var x = document.getElementById("show-more-s");
+				x.style.display = "block";
+
+			}
+			function showMoreH() {
+				var x = document.getElementById("show-more-h");
+				x.style.display = "block";
+
+			}
+
+
+
+			function interior() {
+				var w = document.getElementById("interior");
+				var x = document.getElementById("foods");
+				var y = document.getElementById("events");
+				var z = document.getElementById("drinks");
+				w.style.display = "block";
+				x.style.display = "none";
+				y.style.display = "none";
+				z.style.display = "none";
+			}
+
+			function onClickC(element) {
+				document.getElementById("modal02").style.display = "block";
+			}
+
+			window.onclick = function(event) {
+				var modal = document.getElementsById("modal02");
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+			function onClickCloseC() {
+				document.getElementById("modal02").style.display = "none";
+			}
+
+			function onClickW(element) {
+				document.getElementById("modal03").style.display = "block";
+			}
+			function onClickS(element) {
+				document.getElementById("modal04").style.display = "block";
+			}
+			function onClickH(element) {
+				document.getElementById("modal05").style.display = "block";
+			}
+			function onClickCloseW() {
+				document.getElementById("modal03").style.display = "none";
+			}
+			function onClickCloseS() {
+				document.getElementById("modal04").style.display = "none";
+			}
+			function onClickCloseH() {
+				document.getElementById("modal05").style.display = "none";
+			}
+
+
+
+			var imageIndex = 1;
+			showGalleryImages(imageIndex);
+// Next/previous controls
+function plusGalleryImages(n) {
+	showGalleryImages(imageIndex += n);
+}
+
+// Thumbnail image controls
+function currentGalleryImage(n) {
+	showGalleryImages(imageIndex = n);
+}
+
+function showGalleryImages(n) {
+	var i;
+	var GalleryImages = document.getElementsByClassName("myGalleryImages");
+	var dots = document.getElementsByClassName("demo");
+	if (n > GalleryImages.length) {imageIndex = 1}
+		if (n < 1) {imageIndex = GalleryImages.length}
+			for (i = 0; i < GalleryImages.length; i++) {
+				GalleryImages[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			GalleryImages[imageIndex-1].style.display = "block";
+			dots[imageIndex-1].className += " active";
+			captionText.innerHTML = dots[imageIndex-1].alt;
+		}
+
+	</script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,842 @@
+
+@-webkit-keyframes pulse {
+  0% {
+    background: #df0018;
+  }
+  50% {
+    background: #da3134;
+  }
+  100% {
+    background: #df0018;
+  }
+}
+@keyframes pulse {
+  0% {
+    background: #df0018;
+  }
+  50% {
+    background: #da3134;
+  }
+  100% {
+    background: #df0018;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.gallery-show{
+  width: 100%;
+  margin-top: -70px;
+  background-color: #ffffff;
+  position: relative; 
+  padding: 70px 45px;
+  }
+
+  .icon-flipped{
+   transform: scaleX(-1);
+   -moz-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   -ms-transform: scaleX(-1);
+ }
+ .contact{
+  width: 100%;
+  height: 510px;
+  margin-top: -240px;
+  background-color: #ffffff;
+  position: relative;	
+  margin-bottom: 150px;
+}
+.gallery{
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;	
+}
+.Menu{
+  width: 100%;
+  margin-top: -240px;
+  background-color: #ffffff;
+  position: relative; 
+}
+.slideshow-container {
+  max-width: 985px;
+  position: relative;
+  margin: auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  max-width: 730px;
+  margin: auto;
+  transition:all 0.3s ease;
+}
+.mySlides .image{
+  float: left;
+  height: auto;
+  width: 100%;
+}
+.mySlides .image img{
+ width: 100%;
+ height: 270px; 
+}
+.mySlides .image-overlay{
+  position: absolute;
+  height: 100%;
+  margin: auto;
+  width: 91%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #da3134;
+}
+
+.image-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #da3134;
+}
+.how-we-do-it .image{
+  position: relative;
+  width: auto;
+  display: block;
+}
+.how-we-do-it .image:hover .image-overlay{
+  opacity: 0.4;
+}
+
+.mySlides .image:hover .image-overlay{
+  opacity: 0.4;
+}
+/* Next & previous buttons */
+.prev-slide,
+.next-slide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -50px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  border: solid 1px #f5f5f5;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev-slide i{
+  color: #b5b5b5;
+  font-size: 24px;
+}
+.next-slide i{
+  color: #b5b5b5;
+  font-size: 24px;
+}
+/* Position the "next button" to the right */
+.next-slide {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-slide:hover,
+.next-slide:hover {
+ border: solid 1px  #da3134;
+ color:  #da3134; 
+}
+.prev-slide:hover i{
+  color:  #da3134; 
+}
+.next-slide:hover i{
+  color:  #da3134; 
+}
+
+
+.w3-animate-opacity{
+  animation-duration: 2s;
+}
+.mySlides .w3-animate-opacity{
+  animation-duration: 0.6s;
+}
+.myImages .w3-animate-opacity{
+  animation-duration: 1s;
+}
+.myImages .w3-animate-zoom{
+  animation-duration: 1s;
+}
+.myGalleryImages .w3-animate-opacity{
+  animation-duration: 1s;
+}
+.myGalleryImages .w3-animate-zoom{
+  animation-duration: 1s;
+}
+
+.modal {
+  z-index:1;
+  display:none;
+  padding:10px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgba(0,0,0,0.9)
+}
+.close {
+  text-decoration:none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.6s ease;
+  float:right;font-size:24px;font-weight:bold;color:white;
+}
+.close:hover{
+  font-size: 32px;
+  color: white;
+}
+.modal-content{
+  width: auto;
+  margin: auto;
+  display: block;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.myGalleryImages {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prevImg,
+.nextImg {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 30px;
+  margin-top: -50px;
+  color: #fff!important;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "nextImg button" to the right */
+.nextImg {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevImg:hover,
+.nextImg:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.what-we-do{
+	padding: 100px 0px 0px;
+}
+.section-header{
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.section-header .title{
+ font-size: 48px;
+ color: #000000;
+ font-family: "CHINESE ROCKS"; 
+ line-height: 56px;
+
+
+}
+
+
+.what-we-do .content .about-us{
+	height: 650px;
+  margin-bottom: 100px;
+}
+
+.what-we-do .content .about-us-mobile{
+  display: none;
+  height: 650px;
+  margin-bottom: 100px;
+}
+.what-we-do .content .pannel1 .details{
+	width: 55%;
+	float: left;
+	padding: 100px 0px;
+  padding-left: 150px;
+  padding-right: 40px;
+}
+.what-we-do .content .pannel1 .img{
+	width: 45%;
+	float: right;
+}
+
+.what-we-do .content .pannel2 .details{
+	width: 55%;
+	float: right;
+  padding: 100px 0px;
+  padding-right: 150px;
+  padding-left: 40px;
+}
+
+
+.what-we-do .content .pannel2 .img{
+	width: 45%;
+	float: left;
+}
+.what-we-do .content .img-ver{
+  max-height: 550px;
+  width: 50%;
+
+}
+.what-we-do .content .img-hor{
+
+  max-height: 350px;
+  width: 70%;
+  margin-top: -165px;
+  position: relative;
+  float: right;
+}
+.what-we-do .content .img-hor img{
+
+}
+.what-we-do .content img{
+  width: 100%;
+  height: 100%;
+}
+.what-we-do .content p{
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  line-height: 40px; 
+}
+.what-we-do .details .btn{
+  width: 170px;
+  height: 50px;
+  margin-top: 50px;
+}
+.what-we-do .details .btn a{
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  background: #da3134;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.what-we-do .details .btn a:hover{
+  -webkit-animation: pulse 0.8s ease-in-out infinite alternate;
+  animation: pulse 0.8s ease-in-out infinite alternate;
+}
+
+.how-we-do-it{
+
+}
+.how-we-do-it .menu{
+
+}
+.how-we-do-it ul{
+  max-width: 420px;
+  margin: auto;
+  overflow: hidden;
+}
+.how-we-do-it .menu ul li{
+ float: left; 
+ text-decoration: none;
+ list-style-type: none;
+}
+
+.how-we-do-it .menu ul li  a{
+  display: block;
+  text-decoration: none;
+  padding: 30px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #b2b2b2; 
+}
+.interior{
+
+}
+.foods{
+	display: none;
+  border-top: solid 2px #f5f5f5;
+  margin-top: -2px;
+}
+.events{
+  display: none;
+  border-top: solid 2px #f5f5f5;
+  margin-top: -2px;
+}
+.drinks{
+  display: none;
+  border-top: solid 2px #f5f5f5;
+  margin-top: -2px;
+}
+.how-we-do-it .menu ul li  a:hover{
+	color: #666666;
+	border-bottom: solid 2px #d93033;
+}
+.how-we-do-it .menu ul .active a{
+  color: #666666;
+  border-bottom: solid 2px #d93033;
+}
+.how-we-do-it .content{
+
+}
+.how-we-do-it .w3-animate-opacity{
+  animation-duration: 4s;	
+}
+.how-we-do-it .box .image{
+  margin-bottom: 20px;
+}
+
+.how-we-do-it .box .image img{
+ width: 100%;
+ height: auto;
+}
+.how-we-do-it .box .image img:hover{
+
+}
+.how-we-do-it .show-all{
+  width: 100%;
+  height: 80px;
+  padding: 33px;
+  text-align: center;
+  color: #1e1e1e;
+  font-size: 12px;
+}
+
+.fa-arrow-down {
+  margin-left: 15px;
+  color: #1e1e1e;
+}
+
+.how-we-do-it .show-more{
+	display: none;
+	padding-bottom: 30px;
+}
+.how-we-do-it .show-all a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  color: #1e1e1e;
+  text-align: center;
+  text-transform: uppercase;
+}
+.how-we-do-it .show-all  a:hover{
+	color: #1e1e1e;
+}
+.how-we-do-it .show-all span{
+	margin-left: 10px;
+}
+
+.Restaurant-menu{
+  margin-bottom: 150px;
+}
+.Restaurant-menu .menu{
+
+}
+.Restaurant-menu ul{
+  max-width: 420px;
+  margin: auto;
+  overflow: hidden;
+}
+.Restaurant-menu .menu ul li{
+ float: left; 
+ text-decoration: none;
+ list-style-type: none;
+}
+
+.Restaurant-menu .menu ul li  a{
+  display: block;
+  text-decoration: none;
+  padding: 30px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #b2b2b2; 
+}
+.breakfast{
+ border-top: solid 2px #f5f5f5;
+ margin-top: -2px;
+}
+.lunch{
+  display: none;
+  border-top: solid 2px #f5f5f5;
+  margin-top: -2px;
+}
+.dinner{
+  display: none;
+  border-top: solid 2px #f5f5f5;
+  margin-top: -2px;
+}
+.deserts{
+  display: none;
+  border-top: solid 2px #f5f5f5;
+  margin-top: -2px;
+}
+.Restaurant-menu .menu ul li  a:hover{
+  color: #666666;
+  border-bottom: solid 2px #d93033;
+}
+.Restaurant-menu .menu ul .active a{
+  color: #666666;
+  border-bottom: solid 2px #d93033;
+}
+.Restaurant-menu .content ul li{
+  list-style-type: none;
+  margin-top: 50px; 
+}
+.Restaurant-menu .content .title{
+  height: 20px;
+}
+.Restaurant-menu .content .sub-title{
+ font-weight: 400;
+ font-size: 13px;
+ color: #b2b2b2; 
+ margin-top: 20px;
+}
+.Restaurant-menu .content .border-mid{
+  height: 2px;
+  background: #f0f0f0;
+  float: left;
+  margin: 10px 0px 20px 20px;
+}
+.Restaurant-menu .content .price{
+  font-weight: 400;
+  font-size: 13px;
+  color: #666666;
+  float: right;
+}
+
+.Restaurant-menu .content .name{
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666; 
+  float: left;
+}
+.Restaurant-menu .content .menu-card{
+
+}
+
+
+
+@media (max-width: 1025px){
+  .section-header .title-border-left{
+    width: 25%;
+  }
+  .section-header .title-border-right{
+    width: 25%;
+  }
+  .what-we-do .content .img{
+    padding: 100px 0px;
+  }
+  .what-we-do .content .about-us{
+    margin-bottom: 0px;
+  }
+
+}
+@media (max-width: 991px){
+
+  .what-we-do .content .pannel1 .details{
+
+    padding-left: 100px;
+
+  }
+  .what-we-do .content .pannel2 .details{
+
+   padding-right: 100px;
+
+ }
+ .mySlides .image img{
+  height: auto;
+
+}
+.contact{
+  height: 800px;
+}
+.contact-services .icon{
+  font-size: 32px;
+  color: #f0f0f0;
+  text-align: center;
+  margin-top: 20px;
+}
+.what-we-do .content .about-us{
+  height: 700px;
+}
+
+.what-we-do .content .about-us-mobile{
+  height: 700px;
+}
+.prev-slide,
+.next-slide {
+  top: 50%;
+  margin-top: -30px;
+}
+
+.header .menu-items{
+	display: none;
+}
+.burger-menu{
+  display: inherit;
+}
+.gallery{
+
+  padding: 30px 10px;
+}
+.mySlides {
+  display: none;
+  max-width: 550px;
+  width: auto;
+  margin: auto;
+  transition:all 1s ease;
+}
+.prev-slide,
+.next-slide {
+
+  padding: 7px;
+
+}
+
+}
+
+@media (max-width: 769px){
+  .header-info .logo{
+    padding: 30px;
+  }
+  .prevImg,
+  .nextImg {
+
+    padding: 15px;
+    font-size: 24px;
+    margin-top: -30px;
+  }
+  .gallery-show .title span{
+    margin: 0px;
+  }
+  .what-we-do .content .img{
+    padding: 50px 0px;
+  }
+  .modal-content{
+    top: 40%;
+    left: 40%;
+    transform: translate(-30%, -30%); 
+  }
+  .what-we-do .content .about-us-mobile{
+    display: block;
+  }
+  .what-we-do .content .pannel2{
+    display: none;
+  }
+  .what-we-do .content .pannel1 .details{
+   width: 100%;
+   float: none;
+   padding: 20px 0px;
+ }
+ .what-we-do .content .pannel1{
+ 	padding: 0px 20px;
+ }
+
+ .what-we-do{
+   padding: 50px 0px;
+ }
+ .what-we-do .content .about-us{
+  height: 1000px;
+  margin-bottom: 100px;
+}
+
+.what-we-do .content .about-us-mobile{
+  height: 1000px;
+  margin-bottom: 100px;
+}
+.what-we-do .content .pannel1 .img{
+  width: auto;
+  float: none;
+  margin: auto;
+}
+.what-we-do .content .pannel2 .img{
+  width: auto;
+  float: none;
+  margin: auto;
+}
+.what-we-do .content img{
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.gallery-show{
+
+  margin-top: -50px;
+
+}
+.gallery{
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  position: relative; 
+}
+.footer_gal {
+  padding-top: 0;
+}
+.Restaurant-menu .content .border-mid{
+  display: none;}
+  .gallery-show .title{
+    line-height: 48px;
+  }
+  .prev-slide,
+  .next-slide {
+    top: 50%;
+    margin-top: -20px;
+    padding: 4px;
+  }
+  .mySlides img{
+    height: auto;
+
+  }
+  .mySlides {
+   max-width: 440px;
+   width: auto;
+ }
+ .Services{
+  padding: 50px 10px;
+}
+.prev-slide,
+.next-slide span{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.how-we-do-it .menu ul li  a{
+ padding: 20px 2px;
+
+}
+
+}
+@media (max-width: 580px){
+  .mySlides {
+   max-width: 420px;
+   width: auto;
+ }
+ .what-we-do .content{
+  padding: 0px 10px;
+}
+.hero .content .home-title{
+ font-size: 42px;
+ max-width: 400px;
+ line-height: 45px;
+
+ animation: 
+ typing 4s steps(60);
+
+}
+
+}
+@media (max-width: 480px){
+  .prev-slide,
+  .next-slide {
+    padding: 2px;
+    margin-top: -20px;
+
+  }
+  .burger-menu .items{
+
+    margin-right: 0px;
+  }
+  .hero .content .btns a{
+
+    padding: 15px 20px;
+
+  }
+  .prevImg,
+  .nextImg {
+
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  .mySlides {
+   max-width: 300px;
+   width: auto;
+ }
+ .gallery-show{
+  padding: 10px;
+}
+.prev-slide i{
+  color: #b5b5b5;
+  font-size: 18px;
+  font-weight: 400;
+}
+.next-slide i{
+  color: #b5b5b5;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-header .title-border-left{
+  width: 20%;
+}
+.section-header .title-border-right{
+  width: 20%;
+}
+.hero .hero-pannel .left-border{
+ display: none;
+
+}
+.hero .hero-pannel .right-border{
+  display: none;
+
+}
+.what-we-do .content .img-hor{
+
+  margin-top: -50px;
+
+}
+}
+@media (max-width: 321px){
+  .mySlides {
+   max-width: 230px;
+   width: auto;
+ }	
+ .hero .content .btns a{
+
+  padding: 15px 10px;
+
+}
+.hero .content .home-title{
+ font-size: 36px;
+ max-width: 320px;
+ line-height: 40px;
+
+ animation: 
+ typing 4s steps(60);
+
+}
+.gallery-show{
+  padding: 10px;
+  margin-top: -20px;
+}
+
+}

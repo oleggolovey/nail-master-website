@@ -1,0 +1,153 @@
+
+input {
+	border: none;
+	background-color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.fa {
+	color: #d9d9d9;
+}
+
+.fa-bars {
+	color: #101010;
+}
+
+.input-group {
+	border: 1px solid #dedede;
+	background-color: #ffffff;
+	padding: 5px 20px;
+	margin-bottom: 30px;
+}
+
+.input-group:focus-within {
+	border: 1px solid #101010;
+}
+
+.input-group .center-it {
+	margin: auto;
+}
+
+.text-area span {
+	margin-top: 7px !important;
+}
+
+textarea {
+	resize: none;
+	min-height: 200px;
+}
+
+.form-control,
+.form-control:focus {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+form button {
+	color: #1e1e1e !important;
+	background-color: transparent!important;
+	border: 2px solid #dedede !important;
+	border-radius: 2px !important;
+	padding: 10px 40px !important;
+	position: relative;
+	transition: all 300ms ease;
+	z-index: 1;
+}
+
+form button::before {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 100%;
+	background: transparent;
+	top: 0;
+	left: auto;
+	right: 0;
+	z-index: -1;
+	transition: all 300ms ease;
+}
+
+form button:hover::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #efb2ba;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+form button:hover {
+	color: #101010 !important;
+	border-color: #efb2ba!important;
+}
+
+.contact-us .title {
+	margin-bottom: 50px;
+}
+
+.contact-us .content {
+	background-color: #ffffff;
+	padding: 70px 0 0;
+	margin-bottom: 20px;
+}
+
+.contact-us h1 {
+	color: #000000 !important;
+}
+
+.contact-us h3,
+.contact-us p,
+.contact-us span {
+	color: #1e1e1e !important;
+}
+
+.contact-us .body h1 {
+	font-size: 1.5rem;
+}
+
+.contact-us .body h3 {
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+
+.contact-us .body p {
+	font-size: 14px;
+	line-height: 2em;
+	margin-bottom: 10px;
+}
+
+.mt {
+	margin-top: 20px;
+}
+
+.contact-us .body {
+	padding: 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.contact-us {
+		text-align: center;
+	}
+
+	.contact-us .content {
+		padding-top: 40px;
+		margin-bottom: 0;
+	}
+
+	.map .mapPosDiv.map-icon {
+		width: 15px !important;
+	}
+	.footer {
+		padding-top: 50px;
+	}
+}
